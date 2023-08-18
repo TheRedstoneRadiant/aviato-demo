@@ -10,7 +10,7 @@ function App() {
       {isLoading && <PreLoader setIsLoading={setIsLoading} />}
 
       <div
-        className={`w-screen h-screen overflow-x-hidden overflow-y-scroll flex flex-col items-center ${
+        className={`flex h-screen w-screen flex-col items-center overflow-x-hidden overflow-y-scroll ${
           isLoading
             ? "opacity-0"
             : "opacity-100 transition-opacity duration-500"
@@ -22,15 +22,15 @@ function App() {
       >
         <NavigationBar />
 
-        <h1 className="text-indigo-950 leading-snug mt-24 max-w-5xl text-8xl font-bold text-center">
+        <h1 className="mt-24 max-w-5xl text-center text-8xl font-bold leading-snug text-indigo-950">
           The ultimate search engine for&nbsp;
-          <div className="rounded-[20px] rotate-2 text-white bg-primary-200 inline-block px-4 pb-5">
+          <div className="inline-block rotate-2 rounded-[20px] bg-primary-200 px-4 pb-5 text-white">
             <span className="inline-block -rotate-2">startups</span>
           </div>
         </h1>
 
         <img src="assets/Demo.png" alt="Demo" />
-        <p className="text-slate-500 font-medium">
+        <p className="font-medium text-slate-500">
           Investors already using Aviato
         </p>
         <img className="my-10" src="assets/Investors.png" alt="Investors" />
