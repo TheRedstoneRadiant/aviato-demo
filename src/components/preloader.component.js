@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 export default function Preloader({ setIsLoading }) {
   useEffect(() => {
+    // Hide preloader once window is fully loaded
     window.addEventListener("load", () => {
       setIsLoading(false);
     });
