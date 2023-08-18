@@ -1,3 +1,4 @@
+import React from "react";
 import AviatoLogo from "./aviatoLogo.component";
 
 export default function NavigationBar() {

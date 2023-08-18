@@ -1,22 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NavigationBar from "./components/navigationBar.component";
+import PreLoader from "./components/preloader.component";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener("load", () => {
-      setIsLoading(false);
-    });
-  }, []);
-
   return (
     <div className="m-0 font-inter">
-      {isLoading && (
-        <div className="w-screen h-screen flex items-center justify-center opacity-100 transition-opacity duration-500">
-          <div className="animate-spin rounded-full border-t-4 border-blue-500 border-opacity-50 h-16 w-16"></div>
-        </div>
-      )}
+      {isLoading && <PreLoader setIsLoading={setIsLoading} />}
 
       <div
         className={`w-screen h-screen overflow-x-hidden overflow-y-scroll flex flex-col items-center ${
