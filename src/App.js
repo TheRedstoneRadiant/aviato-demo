@@ -22,18 +22,24 @@ function App() {
       >
         <NavigationBar />
 
-        <h1 className="mt-24 max-w-5xl text-center text-8xl font-bold leading-snug text-indigo-950">
-          The ultimate search engine for&nbsp;
+        <h1 className="mt-24 max-w-5xl text-center text-[32px] font-bold leading-snug text-indigo-950 md:text-[72px] lg:text-[84px]">
+          The ultimate search
+          <br />
+          engine for&nbsp;
           <div className="inline-block rotate-2 rounded-[20px] bg-primary-200 px-4 pb-5 text-white">
             <span className="inline-block -rotate-2">startups</span>
           </div>
         </h1>
 
-        <img src="assets/Demo.png" alt="Demo" />
+        <img className="w-full" src="assets/Demo.png" alt="Demo" />
         <p className="font-medium text-slate-500">
           Investors already using Aviato
         </p>
-        <img className="my-10" src="assets/Investors.png" alt="Investors" />
+        <img
+          className="my-10 w-3/4"
+          src="assets/Investors.png"
+          alt="Investors"
+        />
       </div>
     </div>
   );
