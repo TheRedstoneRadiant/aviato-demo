@@ -8,12 +8,6 @@ function App() {
     window.addEventListener("load", () => {
       setIsLoading(false);
     });
-
-    return () => {
-      window.removeEventListener("load", () => {
-        setIsLoading(false);
-      });
-    };
   }, []);
 
   return (
