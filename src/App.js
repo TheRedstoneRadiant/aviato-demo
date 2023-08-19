@@ -26,7 +26,7 @@ function App() {
           The ultimate search
           <br />
           engine for&nbsp;
-          <div className="inline-block rotate-2 rounded-[20px] bg-primary-200 px-4 pb-5 text-white">
+          <div className="inline-block rotate-2 rounded-[20px] bg-primary-200 px-4 pb-2 text-white lg:pb-5">
             <span className="inline-block -rotate-2">startups</span>
           </div>
         </h1>

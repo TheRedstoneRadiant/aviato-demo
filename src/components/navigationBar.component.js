@@ -2,28 +2,30 @@ import React from "react";
 import AviatoLogo from "./aviatoLogo.component";
 
 export default function NavigationBar() {
-  const InconspicuousURL = atob(
-    "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==",
-  );
-
   return (
     <nav className="mt-6 flex justify-center">
-      <div className="flex items-center justify-around rounded-2xl bg-white p-3 text-sm font-semibold">
+      <div className="flex items-center justify-around rounded-2xl bg-white p-3 text-xs font-semibold drop-shadow-md sm:text-sm">
         <AviatoLogo />
-        <div className="flex space-x-8 px-8 text-gray-950">
-          <a href={InconspicuousURL}>Team</a>
-          <a href={InconspicuousURL}>Blog</a>
+        <div className="flex space-x-4 px-4 text-gray-950 sm:space-x-8 sm:px-8">
+          <a href="/" target="_blank">
+            Team
+          </a>
+          <a href="/" target="_blank">
+            Blog
+          </a>
         </div>
         <div className="space-x-1.5">
           <a
-            href={InconspicuousURL}
-            className="px-3.5 py-2 font-semibold text-primary-500"
+            href="https://www.aviato.co/funds/auth/login"
+            className="px-2 py-2 font-semibold text-primary-500 sm:px-3.5"
           >
             Sign In
           </a>
-          <button className="rounded-lg bg-primary-100 px-3.5 py-2 text-white">
-            Request a free trial
-          </button>
+          <a href="https://www.aviato.co/sales">
+            <button className="rounded-lg bg-primary-100 px-2 py-2 text-white sm:px-3.5 sm:py-2">
+              Request a free trial
+            </button>
+          </a>
         </div>
       </div>
     </nav>
